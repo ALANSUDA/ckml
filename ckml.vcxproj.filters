@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{8cf753f2-868a-44ea-a4f6-ea798e8fbdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{6625167d-232d-4a38-ba89-e76a433b9d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\atlas">
+      <UniqueIdentifier>{4b50da4f-7064-4858-a88b-ab21ebbecf01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\atlas">
+      <UniqueIdentifier>{45051fb3-f9cd-4f3b-9bcf-a14e68ffd27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\linear_model">
+      <UniqueIdentifier>{e782082f-b037-4ca4-9acd-f78efa03662b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\linear_model">
+      <UniqueIdentifier>{e39ed9ec-6f98-4750-9c4c-aa5ac0ae27db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\preproccess">
+      <UniqueIdentifier>{c898b7c6-44e0-4c01-b12d-abcbc47ee9f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\preproccess">
+      <UniqueIdentifier>{083eab61-ed7b-4517-ac54-48227d47369c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\utils\ckdef.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\types.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\dataframe.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ckml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\Algorithm.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regression\sgdregressor.h">
+      <Filter>Header Files\linear_model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_aux.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_dsysinfo.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_enum.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_level1.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_level2.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_misc.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_refalias1.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_refalias2.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_reflevel1.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_reflevel2.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_reflvl2.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_refmisc.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_ssysinfo.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\atlas_type.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atlas\cblas.h">
+      <Filter>Header Files\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regression\linearRegression.h">
+      <Filter>Header Files\linear_model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\preproccess\Normalizer.h">
+      <Filter>Header Files\preproccess</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\utils\dataframe.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefasum.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefcopy.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefgemv.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefgemvN.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefgemvT.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefger.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefrot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_drefrotg.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_dsrefdot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_srefasum.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_srefcopy.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_srefnrm2.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_srefrot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\ATL_srefrotg.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_dasum.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_daxpy.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_dcopy.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_ddot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_dgemv.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_dger.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_dnrm2.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_drot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_drotg.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_dscal.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_errprn.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_sasum.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_saxpy.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_scopy.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_sdot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_snrm2.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_srot.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_srotg.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atlas\cblas_xerbla.c">
+      <Filter>Source Files\atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regression\sgdregressor.cpp">
+      <Filter>Source Files\linear_model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regression\linearRegression.cpp">
+      <Filter>Source Files\linear_model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\preproccess\Normalizer.cpp">
+      <Filter>Source Files\preproccess</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\atlas\README.txt">
+      <Filter>Source Files\atlas</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

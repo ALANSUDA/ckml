@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  test.cpp
+e:\2106\c++\ckml\include\utils\types.h(33): warning C4251: 'ckml::_Column::colName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'ckml::_Column'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+e:\2106\c++\ckml\include\regression\sgdregressor.h(15): warning C4251: 'ckml::SGDRegressor::loss': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'ckml::SGDRegressor'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+e:\2106\c++\ckml\include\regression\sgdregressor.h(20): warning C4251: 'ckml::SGDRegressor::penalty': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'ckml::SGDRegressor'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+e:\2106\c++\ckml\include\regression\sgdregressor.h(76): warning C4251: 'ckml::SGDRegressor::learningRate': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'ckml::SGDRegressor'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+     Creating library E:\2106\c++\ckml\x64\Debug\test.lib and object E:\2106\c++\ckml\x64\Debug\test.exp
+  test.vcxproj -> E:\2106\c++\ckml\x64\Debug\test.exe
+  test.vcxproj -> E:\2106\c++\ckml\x64\Debug\test.pdb (Full PDB)

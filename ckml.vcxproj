@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E33273CF-2635-4837-9C2E-A9215A60667F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ckml</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\2106\c++\ckml\include\atlas;E:\2106\c++\ckml\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CKML_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;CKML_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CKML_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;CKML_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\atlas\atlas_aux.h" />
+    <ClInclude Include="include\atlas\atlas_dsysinfo.h" />
+    <ClInclude Include="include\atlas\atlas_enum.h" />
+    <ClInclude Include="include\atlas\atlas_level1.h" />
+    <ClInclude Include="include\atlas\atlas_level2.h" />
+    <ClInclude Include="include\atlas\atlas_misc.h" />
+    <ClInclude Include="include\atlas\atlas_refalias1.h" />
+    <ClInclude Include="include\atlas\atlas_refalias2.h" />
+    <ClInclude Include="include\atlas\atlas_reflevel1.h" />
+    <ClInclude Include="include\atlas\atlas_reflevel2.h" />
+    <ClInclude Include="include\atlas\atlas_reflvl2.h" />
+    <ClInclude Include="include\atlas\atlas_refmisc.h" />
+    <ClInclude Include="include\atlas\atlas_ssysinfo.h" />
+    <ClInclude Include="include\atlas\atlas_type.h" />
+    <ClInclude Include="include\atlas\cblas.h" />
+    <ClInclude Include="include\ckml.h" />
+    <ClInclude Include="include\preproccess\Normalizer.h" />
+    <ClInclude Include="include\regression\linearRegression.h" />
+    <ClInclude Include="include\regression\sgdregressor.h" />
+    <ClInclude Include="include\utils\Algorithm.h" />
+    <ClInclude Include="include\utils\ckdef.h" />
+    <ClInclude Include="include\utils\dataframe.h" />
+    <ClInclude Include="include\utils\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\atlas\ATL_drefasum.c" />
+    <ClCompile Include="src\atlas\ATL_drefcopy.c" />
+    <ClCompile Include="src\atlas\ATL_drefgemv.c" />
+    <ClCompile Include="src\atlas\ATL_drefgemvN.c" />
+    <ClCompile Include="src\atlas\ATL_drefgemvT.c" />
+    <ClCompile Include="src\atlas\ATL_drefger.c" />
+    <ClCompile Include="src\atlas\ATL_drefrot.c" />
+    <ClCompile Include="src\atlas\ATL_drefrotg.c" />
+    <ClCompile Include="src\atlas\ATL_dsrefdot.c" />
+    <ClCompile Include="src\atlas\ATL_srefasum.c" />
+    <ClCompile Include="src\atlas\ATL_srefcopy.c" />
+    <ClCompile Include="src\atlas\ATL_srefnrm2.c" />
+    <ClCompile Include="src\atlas\ATL_srefrot.c" />
+    <ClCompile Include="src\atlas\ATL_srefrotg.c" />
+    <ClCompile Include="src\atlas\cblas_dasum.c" />
+    <ClCompile Include="src\atlas\cblas_daxpy.c" />
+    <ClCompile Include="src\atlas\cblas_dcopy.c" />
+    <ClCompile Include="src\atlas\cblas_ddot.c" />
+    <ClCompile Include="src\atlas\cblas_dgemv.c" />
+    <ClCompile Include="src\atlas\cblas_dger.c" />
+    <ClCompile Include="src\atlas\cblas_dnrm2.c" />
+    <ClCompile Include="src\atlas\cblas_drot.c" />
+    <ClCompile Include="src\atlas\cblas_drotg.c" />
+    <ClCompile Include="src\atlas\cblas_dscal.c" />
+    <ClCompile Include="src\atlas\cblas_errprn.c" />
+    <ClCompile Include="src\atlas\cblas_sasum.c" />
+    <ClCompile Include="src\atlas\cblas_saxpy.c" />
+    <ClCompile Include="src\atlas\cblas_scopy.c" />
+    <ClCompile Include="src\atlas\cblas_sdot.c" />
+    <ClCompile Include="src\atlas\cblas_snrm2.c" />
+    <ClCompile Include="src\atlas\cblas_srot.c" />
+    <ClCompile Include="src\atlas\cblas_srotg.c" />
+    <ClCompile Include="src\atlas\cblas_xerbla.c" />
+    <ClCompile Include="src\preproccess\Normalizer.cpp" />
+    <ClCompile Include="src\regression\linearRegression.cpp" />
+    <ClCompile Include="src\regression\sgdregressor.cpp" />
+    <ClCompile Include="src\utils\dataframe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\atlas\README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
